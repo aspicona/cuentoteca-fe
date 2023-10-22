@@ -1,0 +1,47 @@
+<div class="sidebar-nav">
+    <nav class="navbar navbar-dark fixed-top">
+        <div class="container">
+            <!-- Mobile Menu Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menus List -->
+            <div class="offcanvas offcanvas-start shadow" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="position: fixed;">
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav">
+                        <!-- <li><a class="link" href="#"><i class="bi bi-calendar3"></i> <span class="item-text">Calendario</span></a></li>
+                        <li><a class="link" href="#"><i class="bi bi-pencil-square"></i> <span class="item-text">Tareas</span></a></li> -->
+                        <li><a class="link" routerLink="lista-usuarios"><i class="bi bi-people "></i> <span class="item-text ">Usuarios</span></a></li>
+                        <!-- <li><a class="link" routerLink="docentes"><i class="bi bi-people "></i> <span class="item-text ">Docentes</span></a></li>
+                        <li><a class="link" routerLink="alumnos"><i class="bi bi-people "></i> <span class="item-text ">Estudiantes</span></a></li>
+                        <li><a class="link " routerLink="salas"><i class="bi bi-book "></i> <span class="item-text ">Salas</span></a></li>
+                        <li><a class="link " routerLink="noticias"><i class="bi bi-person-check "></i> <span class="item-text ">Noticias</span></a></li>
+                        <li><a class="link " href="# "><i class="bi bi-envelope "></i> <span class="item-text ">Notificaciones</span></a></li>
+                        <li><a class="link " href="# "><i class="bi bi-graph-up "></i> <span class="item-text ">Reportes</span></a></li> -->
+                    </ul>
+                </div>
+            </div>
+
+            <div class="btn-group ">
+                <a href="# " class="dropdown-toggle text-white text-decoration-none " data-bs-toggle="dropdown " aria-expanded="false ">
+                    <span class="usericon "><i class="bi bi-person-circle "></i></span>
+                    <!-- <span class="textnone ">{{usuarioLogueado}}</span> -->
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end ">
+                    <li><button class="dropdown-item " type="button "><i class="bi bi-lock-fill "></i> Cambiar Password</button></li>
+                    <li><button class="dropdown-item " type="button "><i class="bi bi-gear-fill "></i> Administrar usuario</button></li>
+                    <li><button class="dropdown-item " type="button "><i class="bi bi-gear-wide-connected "></i> Configuración</button></li>
+                    <li>
+                        <hr class="dropdown-divider ">
+                    </li>
+                    <li><button class="dropdown-item " type="button "><i class="bi bi-box-arrow-right "></i> Salir</button></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</div>
+<div class="container " style="padding-top: 56px; padding-left: 200px; ">
+    <router-outlet></router-outlet>
+</div>
